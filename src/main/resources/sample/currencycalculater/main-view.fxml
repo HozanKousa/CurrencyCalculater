@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="800.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0" prefHeight="749.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.currencycalculater.Controllers.FirstController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/background-croped.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="37.0" layoutY="34.0" prefHeight="732.0" prefWidth="528.0" style="-fx-background-color: rgba(255,2555,255,0.25); -fx-background-radius: 30;">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="24.0" layoutY="16.0" prefHeight="700.0" prefWidth="494.0" spacing="50.0">
+               <children>
+                  <GridPane prefHeight="360.0" prefWidth="365.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.3721618652344" minWidth="10.0" prefWidth="183.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.1346435546875" minWidth="10.0" prefWidth="293.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="167.0" minHeight="10.0" prefHeight="167.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="142.50680541992188" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="213.2435760498047" minHeight="10.0" prefHeight="135.53857421875" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ComboBox fx:id="first" prefHeight="93.0" prefWidth="119.0" style="-fx-background-color: #327da4; -fx-background-radius: 10; -fx-font: 18px &quot;Serif&quot;;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                           <effect>
+                              <DropShadow offsetX="4.0" offsetY="4.0" spread="0.17">
+                                 <color>
+                                    <Color opacity="0.27342256903648376" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ComboBox>
+                        <TextField fx:id="firstField" alignment="CENTER" maxHeight="92.0" maxWidth="250.0" minHeight="0.0" minWidth="0.0" prefHeight="92.0" prefWidth="250.0" style="-fx-background-color: white; -fx-background-radius: 10;" GridPane.columnIndex="1">
+                           <effect>
+                              <DropShadow offsetX="4.0" offsetY="4.0" spread="0.17">
+                                 <color>
+                                    <Color opacity="0.26577436923980713" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox fx:id="second" prefHeight="93.0" prefWidth="118.0" style="-fx-background-color: #327da4; -fx-background-radius: 10; -fx-font: 18px &quot;Serif&quot;;" GridPane.rowIndex="2">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <effect>
+                              <DropShadow offsetX="4.0" offsetY="4.0" spread="0.17">
+                                 <color>
+                                    <Color opacity="0.27342256903648376" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ComboBox>
+                        <TextField fx:id="secondField" alignment="CENTER" editable="false" maxHeight="92.0" maxWidth="250.0" minHeight="0.0" minWidth="0.0" prefHeight="92.0" prefWidth="250.0" style="-fx-background-color: white; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <effect>
+                              <DropShadow offsetX="4.0" offsetY="4.0" spread="0.17">
+                                 <color>
+                                    <Color opacity="0.26577436923980713" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <Button mnemonicParsing="false" onAction="#calculate" prefHeight="101.0" prefWidth="269.0" style="-fx-background-radius: 10; -fx-background-color: black;" text="Calculate" textFill="WHITE">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                     <effect>
+                        <DropShadow offsetX="4.0" offsetY="4.0" spread="0.17">
+                           <color>
+                              <Color opacity="0.26959848403930664" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#reset" prefHeight="19.0" prefWidth="207.0" style="-fx-background-radius: 10; -fx-background-color: #09394f;" text="Reset" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <effect>
+                        <DropShadow offsetX="4.0" offsetY="4.0" spread="0.17">
+                           <color>
+                              <Color opacity="0.26959848403930664" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <GridPane prefHeight="239.0" prefWidth="484.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="456.66375732421875" minWidth="10.0" prefWidth="325.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="310.2435607910156" minWidth="10.0" prefWidth="151.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="73.4390869140625" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="85.0" minHeight="6.0" prefHeight="18.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="86.0" prefWidth="200.0" text="Daten Aktualisieren?" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#close" prefHeight="65.0" prefWidth="148.0" style="-fx-background-radius: 10; -fx-background-color: #e74141;" text="Exit" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                           <effect>
+                              <DropShadow offsetX="4.0" offsetY="4.0" spread="0.17">
+                                 <color>
+                                    <Color opacity="0.26959848403930664" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#update" prefHeight="65.0" prefWidth="151.0" style="-fx-background-radius: 10; -fx-background-color: #09394f;" text="Update" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                           <effect>
+                              <DropShadow offsetX="4.0" offsetY="4.0" spread="0.17">
+                                 <color>
+                                    <Color opacity="0.26959848403930664" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
